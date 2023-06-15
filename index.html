@@ -161,12 +161,12 @@
             var valorEmprestimo = parseFloat(document.getElementById("valor-emprestimo").value);
             var numeroParcelas = parseInt(document.getElementById("numero-parcelas").value);
 
-            var taxaJuros = 1.89 / 100; // Taxa fixa de 1,89%
+            var taxaJuros = 1.666 / 100; // Taxa fixa de 1,666%
             var valorTotal = valorEmprestimo + (valorEmprestimo * taxaJuros * numeroParcelas);
             var valorParcela = valorTotal / numeroParcelas;
 
             document.getElementById("valor-parcela").value = formatarMoeda(valorParcela);
-            document.getElementById("taxa").value = "1.89%";
+            document.getElementById("taxa").value = "1.66%";
         }
 
         // Função para reiniciar a simulação
